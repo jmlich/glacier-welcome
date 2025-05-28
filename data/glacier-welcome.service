@@ -1,0 +1,14 @@
+[Unit]
+Description=Device Encryption Setup Wizard
+Before=lightdm.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+EnvironmentFile=-/var/lib/environment/compositor/*.conf
+ExecStartPre=/usr/bin/glacier-welcome $LIPSTICK_OPTIONS
+ExecStart=/bin/echo Device Setup Wizard Done
+Restart=no
+
+[Install]
+RequiredBy=lightdm.service

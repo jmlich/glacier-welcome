@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>glacier-welcome.qml</file>
+        <file>pages/WelcomePage.qml</file>
+        <file>components/SayMeHello.qml</file>
+        <file>pages/SetPasswordPage.qml</file>
+        <file>pages/SetupIsEndPage.qml</file>
+        <file>components/DeviceLockUI.qml</file>
+        <file>components/NumPadButton.qml</file>
+    </qresource>
+</RCC>
