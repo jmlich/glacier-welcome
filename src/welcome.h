@@ -47,7 +47,7 @@ public:
     Q_INVOKABLE void setPassword(const QString password);
 
     QString pass1() const;
-    void setPass1(const QString &newPass1);
+    void setPass1(const QString& newPass1);
 
 signals:
     void pass1Changed();
