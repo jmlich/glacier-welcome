@@ -127,9 +127,9 @@ Page {
         running: false;
         onTriggered: {
             if(welcome.passwordIsSet()) {
-                pageStack.replace(Qt.resolvedUrl("SetupIsEndPage.qml"))
+                root.pageStack.replace(Qt.resolvedUrl("SetupIsEndPage.qml"))
             } else {
-                pageStack.replace(Qt.resolvedUrl("SetPasswordPage.qml"))
+                root.pageStack.replace(Qt.resolvedUrl("SetPasswordPage.qml"))
             }
         }
     }
