@@ -52,6 +52,7 @@ public:
 signals:
     void pass1Changed();
     void setPassError();
+    void setPassOk();
 
 private:
     QDBusInterface* m_mceDbus;
