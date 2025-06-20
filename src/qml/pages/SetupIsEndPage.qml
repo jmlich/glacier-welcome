@@ -42,13 +42,13 @@ Page {
 
     headerTools: HeaderToolsLayout {
         id: tools
-        title: qsTr("Setup is end")
+        title: qsTr("Setup Complete")
     }
 
     Label{
         id: endLabel
         anchors.centerIn: parent
-        text: qsTr("You device ready to use!")
+        text: qsTr("Your device is ready to use")
     }
 
     Button{

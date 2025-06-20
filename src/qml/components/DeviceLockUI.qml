@@ -107,6 +107,9 @@ Item {
 
     Connections{
         target: welcome
+        function onSetPassOk() {
+            root.pageStack.replace(Qt.resolvedUrl("../pages/SetupIsEndPage.qml"))
+        }
         function onSetPassError() {
             welcome.pass1 = ""
             feedbackLabel.text = qsTr("Can't set password")
