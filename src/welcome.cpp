@@ -70,7 +70,7 @@ void Welcome::setPassword(const QString password)
 
     if (!m_password->setCode("", password.toUtf8())) {
         emit setPassError();
-        qWarning() << "Incorrect setting password";
+        qWarning() << "Setting of password failed";
     }
 }
 
